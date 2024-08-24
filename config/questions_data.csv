@@ -1,0 +1,205 @@
+﻿Assignment,Notebook_Name,Questions
+assignment1,A1P1_eda_extended.ipynb,"2.1. For each feature, generate basic summary statistics."
+assignment1,A1P1_eda_extended.ipynb,"2.2. For each feature, look at the distribution using either histograms or bar charts."
+assignment1,A1P1_eda_extended.ipynb,"2.3. For each pair of numeric features, evaluate the pairwise correlation and comment on them."
+assignment1,A1P1_eda_extended.ipynb,"2.4. From your own exploration of the data, provide a few paragraphs explaining the relationships within the dataset. This is also an opportunity to identify how best to conduct your feature engineering."
+assignment1,A1P1_eda_extended.ipynb,"3.1. After you have tested these 2 tools, try to search for and discover another tool that can be used to help you do EDA. This could be a comprehensive 'all-in-one' tool like the above or could just focus on one aspect of the EDA, for example better visualizations. Share your discovery with your teammates so that you will have a pool of tools to use for the future"
+assignment1,A1P2_intro_supervised.ipynb,2.1. Import the necessary libraries needed by this notebook. You may have to edit and execute this cell a few times as you go through the exercise.
+assignment1,A1P2_intro_supervised.ipynb,2.2. Load in the data and do any necessary cleaning. Investigate common feature engineering techniques and apply them to the dataset. You may find sklearn's pipeline mechanism useful for this task.
+assignment1,A1P2_intro_supervised.ipynb,"2.3. Implement the data pipeline using the provided datapipeline.py template in the src/ folder. The transform function should take in the data path and return 4 numpy arrays, X_train, X_test, y_train, y_test."
+assignment1,A1P2_intro_supervised.ipynb,"3.1. Using RandomForestClassifier() from sklearn.ensemble, create and train a model using the default parameters."
+assignment1,A1P2_intro_supervised.ipynb,"4.1. Calculate the confusion matrix for our model on the test set. Additionally, calculate the precision, recall and F1 scores manually from this matrix and validate that calculations are correct."
+assignment1,A1P2_intro_supervised.ipynb,4.2. Investigate how this can be done for this model. Plot both the Precision vs Threshold and Recall vs Threshold curve and Precision vs Recall curve. Comment on what information we can obtain from these plots.
+assignment1,A1P2_intro_supervised.ipynb,4.3. Plot the ROC Curve and obtain the AUC. Explain what other information can be obtained from the ROC Curve (apart from the AUC).
+assignment1,A1P2_intro_supervised.ipynb,"5.1. Execute the code in the following cell and review the errors. For our binary classifier, this analysis may not be that illuminative. However, this type of analysis will be very useful when you are building multiclass classification modules."
+assignment1,A1P2_intro_supervised.ipynb,6.1. Apply cross validation to the data and model. Present the metrics for each fold. Calculate the mean and standard deviation for the metrics.
+assignment1,A1P2_intro_supervised.ipynb,6.2. How did you split the train set to obtain the N folds? Was it stratified by the target variables? Were the distribution of the features considered during the split? You can discuss with your peers on what is the best way to split the training set during cross validation.
+assignment1,A1P2_intro_supervised.ipynb,"6.3. When performing model hyperparameter tuning, we can use nested cross validation. Describe the nested cross validation and apply the method to the data and model."
+assignment1,A1P2_intro_supervised.ipynb,7.1 Create a decision tree which has 3 terminal nodes and calculate the feature importance manually
+assignment1,A1P2_intro_supervised.ipynb,"7.2 Obtain the feature importance which was manually computed, does your manual calculation agree with it?"
+assignment1,A1P2_intro_supervised.ipynb,"7.3 Obtain the feature importance and permutation importance for the random forest. Additionally, are the important features obtained from permutation importance similar to that from the basic feature importance?"
+assignment1,A1P2_intro_supervised.ipynb,7.4 A reason why the decision tree is so favoured when it comes to presenting your findings is that it is extremely explainable. But what does explainability mean and why is it important?
+assignment1,A1P2_intro_supervised.ipynb,7.5 A client notices that tree-based algorithms tend to lend more feature importance to numerical columns as opposed to categorical columns and wants to know why!
+assignment1,A1P2_intro_supervised.ipynb,7.6 Taxonomy of Interpretability Methods
+assignment1,A1P2_intro_supervised.ipynb,"8.1. Using the model.py template in the src/ folder, implement the random forest model as a class. Follow the instructions in teh template with regards to the requirements of this class."
+assignment1,A1P2_intro_supervised.ipynb,"9.1. Tune the algorithm on a few hyperparameters. Compare the metrics against the base model. When you are done tuning, update the get_default_params() function in your model.py script with the optimal hyperparameters."
+assignment1,A1P2_intro_supervised.ipynb,10.1. Create a logistic regression model using the data and repeat the evaluation metrics as before.
+assignment1,A1P2_intro_supervised.ipynb,10.2. Compare the performance of the logistic regression model to the random forest model and discuss which is better suited for the data.
+assignment1,A1P3_rf_from_scratch.ipynb,2.1. Load in the UCI Census data.
+assignment1,A1P3_rf_from_scratch.ipynb,2.2. Begin by doing the following actions:
+assignment1,A1P3_rf_from_scratch.ipynb,"2.3. Create a method in the DecisionTree class called gini() and implement the calculation above. The method should accept 2 lists of numbers, representing the labels for the datapoints in a node. The following cells tests your method for correctness."
+assignment1,A1P3_rf_from_scratch.ipynb,"2.4. Implement a fit method that takes in 2 NumPy matrices: a m\*n train array with m training examples of 'n' features, and a m\*1 array of labels."
+assignment1,A1P3_rf_from_scratch.ipynb,2.5. Implement a predict method for the model.
+assignment1,A1P3_rf_from_scratch.ipynb,"2.6. Even if the program executes correctly, it does not mean that the results are correct. How would you validate the results of your implementation?"
+assignment1,A1P3_rf_from_scratch.ipynb,3.1. Build a simple random forest using the following steps:
+assignment1,A1P3_rf_from_scratch.ipynb,3.2. Implement the following modifications.
+assignment1,A1P3_rf_from_scratch.ipynb,"3.3. Finally, implement the feature_proportion feature. This feature refers to the number of features we allow each tree to use. This further increases the randomness and eliminates overfitting."
+assignment4,A4P1_introduction_deep_learning.ipynb,2.1. Obtain the data from the SQL Server and perform basic EDA
+assignment4,A4P1_introduction_deep_learning.ipynb,"2.2. As the target variable is highly imbalanced, there is a need to use statistical methods to account for this imbalance. Some methods include oversampling, undersampling, sample weighting and Application of Synthetic Minority Over-sampling Technique (SMOTE). Choose one method and explain in detail how it addresses imbalanced datasets."
+assignment4,A4P1_introduction_deep_learning.ipynb," 3.1. Use Keras within TensorFlow (2.0) to build a neural network that has 1 input layer, 3 hidden layers and 1 output layer. Please choose an appropriate loss function when compiling the model. You do not need to train the model at this step. Just define the architecture and compile the model."
+assignment4,A4P1_introduction_deep_learning.ipynb,3.2. Write a data pre-processing pipeline to prepare the data in a way that is useable by the model in 3.1. for training.
+assignment4,A4P1_introduction_deep_learning.ipynb,3.3. Train a model on the imbalanced data and analyse the model's performance. Choose a suitable metric and explain your choice.
+assignment4,A4P1_introduction_deep_learning.ipynb,3.4. Implement one of the techniques for handling imbalanced datasets. Train a separate new model with this technique and analyse the model's performance. Does the technique help improve the model's performance?
+assignment4,A4P1_introduction_deep_learning.ipynb,3.5. Propose some methods to alter the model architecture in order to improve its performance. Choose 2 of the proposed methods and make use of the run:ai platform to run the experiments. Analyse the results to determine which model was the best performing model.
+assignment4,A4P1_introduction_deep_learning.ipynb,3.6. Regularisation is also important to prevent neural networks from overfitting. Some regularisation methods include dropout and early stopping. Explain how these 2 methods help prevent overfitting in neural networks.
+assignment4,A4P1_introduction_deep_learning.ipynb,3.7. Implement dropout and early stopping in the neural network and evaluate the model performance again. Save the best model.
+assignment4,A4P2_components_of_neural_networks.ipynb, 2.1. Obtain the data and feature engineer based on part 1 of the assignment. Please take into consideration how the feature engineering can be reusable and reproducible.
+assignment4,A4P2_components_of_neural_networks.ipynb, 3.1. Use PyTorch to build the same neural network structure as the best model you have trained in part 1 of this assignment. Please ensure that there is a variable that accounts for batch size.
+assignment4,A4P2_components_of_neural_networks.ipynb,3.2. Train your model and analyse the performance. Compare this performance to that of the previous model.
+assignment4,A4P2_components_of_neural_networks.ipynb,"3.3. Try training the model with different batch sizes. Does batch size change the model's performance? If so, please explain why."
+assignment4,A4P2_components_of_neural_networks.ipynb,3.4. Explain the loss function within the PyTorch model. Why is it necessary?
+assignment4,A4P2_components_of_neural_networks.ipynb,3.5. Explain the purpose of the backward pass function within the PyTorch model. Why is it necessary?
+assignment4,A4P2_components_of_neural_networks.ipynb,3.6. An optimiser is required for any neural network. What is the function of an optimiser?
+assignment4,A4P2_components_of_neural_networks.ipynb,3.7. Activation functions are also required for every layer. Why is an activation function required? What makes a good activation function?
+assignment4,A4P2_components_of_neural_networks.ipynb,4.1. Identify 3 commonly used activation functions. Explain how they work and in under which scenarios should these activation functions be used.
+assignment4,A4P2_components_of_neural_networks.ipynb,4.2. Identify 3 commonly used loss functions. Explain how they work and describe the scenarios where these loss functions should be used.
+assignment4,A4P2_components_of_neural_networks.ipynb,4.3. Identify 3 commonly used optimisers. Explain how they work and  describe the scenarios where these optimisers should be used. You can refer to this article to understand more on the various optimisers.
+assignment4,A4P2_components_of_neural_networks.ipynb,4.4. Describe backpropagation and how gradient descent is related to it. You may refer to this link for an illustration of gradient descent.
+assignment4,A4P2_components_of_neural_networks.ipynb,4.5. Backpropagation and the optimisers are intrinsically linked through a variable known as learning rate. Explain the importance of a learning rate within a neural network.
+assignment4,A4P2_components_of_neural_networks.ipynb,4.6. Backpropagation through very deep networks can result in vanishing or exploding gradients. Explain the vanishing and exploding gradient problems and how to mitigate them.
+assignment4,A4P3_neural_network_scratch.ipynb,"1.3. Load the data from the SQL database. Write a pre-processing pipeline within a script, titled as mlp_datapipeline.py, and ensure that the pipeline is reproducible."
+assignment4,A4P3_neural_network_scratch.ipynb,2.1. Create a class MLPTwoLayers in the src folder and ensure that the cell below imports it without errors.
+assignment4,A4P3_neural_network_scratch.ipynb,"2.2. Create a forward  method, which takes in a set of features and returns the probabilities of each class for that datapoint."
+assignment4,A4P3_neural_network_scratch.ipynb,"2.3. Create a loss method, which takes in the predicted probability and actual label and returns the loss for that datapoint."
+assignment4,A4P3_neural_network_scratch.ipynb,2.4. Create a backward method.
+assignment4,A4P3_neural_network_scratch.ipynb,2.5. Train the model.
+assignment4,A4P3_neural_network_scratch.ipynb,"2.6. Finally, re-test your model."
+assignment5,A5P1_introduction.ipynb,3.1. Load your own image using PIL and display it:
+assignment5,A5P1_introduction.ipynb,"3.2. Read up on these 3 concepts. Then, using the image object, find out the following about your image:"
+assignment5,A5P1_introduction.ipynb,"3.3. Let's explore a little deeper. Display the pixels in this image using the .getdata() attribute. Each pixel is a numeric representation of 3 numbers - (red, green, blue). Each of these 3 is what is called a channel."
+assignment5,A5P1_introduction.ipynb,"3.4. Instead, we will represent this image as a NumPy tensor. Doing so gives us more control over data manipulation using the wonderful NumPy APIs."
+assignment5,A5P1_introduction.ipynb,"3.5. Using this img_numpy_tensor object, answer the following questions below:"
+assignment5,A5P1_introduction.ipynb,4.1. Use the PIL or torchvision library to display the following colour transformations applied to the image. Choose your own values for the intensities.
+assignment5,A5P1_introduction.ipynb,4.2. Use the torchvision.transforms.functional module to display the following transformations applied to the image. Choose your own values for the intensities.
+assignment5,A5P1_introduction.ipynb,"4.3. Study how an image convolution works. You should also understand what padding and stride are. Then, complete the following exercise to test your understanding:"
+assignment5,A5P1_introduction.ipynb,4.4. Perform the identity transformation.
+assignment5,A5P1_introduction.ipynb,4.5. Perform the sharpening transformation.
+assignment5,A5P1_introduction.ipynb,4.6. Perform the box blur transformation.
+assignment5,A5P1_introduction.ipynb,4.7. Perform the emboss transformation.
+assignment5,A5P1_introduction.ipynb,4.8. Perform edge detection (using a Sobel operator) transformation.
+assignment5,A5P1_introduction.ipynb,4.9. Perform a custom transformation.
+assignment5,A5P2_classification.ipynb,"2.1. Find out 3 other image-related problems/tasks that you picked up from your readings. For each task, write down:"
+assignment5,A5P2_classification.ipynb,3.1. Spend some time to study CNNs using (but not limited to) the resources above. Answer the following questions.
+assignment5,A5P2_classification.ipynb,3.2. Compute the number of parameters in $W^C$.
+assignment5,A5P2_classification.ipynb,3.3 Compute the number of parameters in $W^F$.
+assignment5,A5P2_classification.ipynb,3.4. Compare the number of parameters between $W^C$ and $W^F$. What are the benefits of using a convolutional network versus a fully-connected neural network for image classification.
+assignment5,A5P2_classification.ipynb,3.5. Describe a 1x1 convolution and its uses.
+assignment5,A5P2_classification.ipynb,4.1. Study these two concepts/ideas and answer the following:
+assignment5,A5P2_classification.ipynb,5.1. Explain what data augmentation is and what it is used for.
+assignment5,A5P2_classification.ipynb,5.2.1 Perform your EDA on the dataset using matplotlib and plan your feature engineering steps
+assignment5,A5P2_classification.ipynb,5.2.2 Make hypotheses and select your image augmentation techniques
+assignment5,A5P2_classification.ipynb,5.3. Load data using tf.keras.preprocessing.image_dataset_from_directory and perform the following:
+assignment5,A5P2_classification.ipynb,"5.4. Build model: To build a model, you first need to load the weights from a pre-trained model - we leave it to you to choose which architecture. On top of this model, add several fully-connected layers (with the right activation functions). Use the tensorflow.keras.models.Model API."
+assignment5,A5P2_classification.ipynb,5.5. Fit model: Fit the model with the training data using an appropriate number of epochs. Use the tensorflow.keras.models.Model.fit API. It should be used with generators of training and validation data. An appropriate loss function is expected to be chosen **
+assignment5,A5P2_classification.ipynb,5.6.1 Tune model: Tuning a model is an iterative step where you try to improve the performance of your model or try to improve the speed of training. Experiment with different configurations (share with your peers and mentors!) and write them down below:
+assignment5,A5P2_classification.ipynb,5.6.2 Investigate images that your model classified wrongly
+assignment5,A5P2_classification.ipynb,"5.7. Save model: Log the model(s), named and formatted as tensorfood.h5, through MLflow and have them uploaded on GCS."
+assignment5,A5P2_classification.ipynb,6.1 Taking a peek at a single layer
+assignment5,A5P2_classification.ipynb,6.2 How do these layers get updated anyway?
+assignment5,A5P2_classification.ipynb,6.3 Setting up the gradient ascent
+assignment5,A5P2_classification.ipynb,6.4 Applying the gradient ascent
+assignment5,A5P2_classification.ipynb,6.5 Look at other layers and filters
+assignment5,A5P3_buildCNN.ipynb,2.1. Create a preprocessing pipeline (with transformations) for ingestion into a binary image classifier using torchvision.transforms. Explain how you decided on what transformations to use.
+assignment5,A5P3_buildCNN.ipynb,2.2. Prepare the directory for binary classification:
+assignment5,A5P3_buildCNN.ipynb,2.3. Create data loaders to combine the datasets and the transformations using torch.utils.data.DataLoader.
+assignment5,A5P3_buildCNN.ipynb,2.4. Define a neural network with the following sequence of layers:
+assignment5,A5P3_buildCNN.ipynb,2.5. Please explain what each layer does and when these layers should be used.
+assignment5,A5P3_buildCNN.ipynb,"2.6. Instantiate the model, a criterion (loss function) and an optimiser."
+assignment5,A5P3_buildCNN.ipynb,2.7. How did you decide on which loss function and optimiser to use?
+assignment5,A5P3_buildCNN.ipynb,2.8. Train and test the model. You should be getting minimally 60% accuracy.
+assignment5,A5P3_buildCNN.ipynb,"3.1. Using the full TensorFood dataset, train and evaluate a multiclass classifier"
+assignment5,A5P3_buildCNN.ipynb,4.1 Load images/tensorfood_obj_detection.jpg and slice it into multiple images appropriate for your model to ingest.
+assignment5,A5P3_buildCNN.ipynb,4.2 Run your slices into your model and see your results. Were you able to detect the foods?
+assignment5,A5P3_buildCNN.ipynb,4.3 Evaluate and reflect: What are the issues you faced when trying to detect the food items in the image?
+assignment5,A5P3_buildCNN.ipynb,4.4 Read up about a Object Detection model of your choice and compare it to your simple object detection algorithm that you have made above.
+assignment6,A6P1_eda_data_cleaning.ipynb,2.1 Properties of time series data
+assignment6,A6P1_eda_data_cleaning.ipynb,2.2 Examples of time series data
+assignment6,A6P1_eda_data_cleaning.ipynb,3.1.1 Univariate plots against time
+assignment6,A6P1_eda_data_cleaning.ipynb,3.1.2 Histograms
+assignment6,A6P1_eda_data_cleaning.ipynb,3.1.3 Bivariate scatter plots and (spurious) correlations
+assignment6,A6P1_eda_data_cleaning.ipynb,3.2.1 Spurious Correlation
+assignment6,A6P1_eda_data_cleaning.ipynb,3.2.2 Discover Spurious Correlation
+assignment6,A6P1_eda_data_cleaning.ipynb,3.2.3 Sliding windows
+assignment6,A6P1_eda_data_cleaning.ipynb,3.2.4 Autocorrelation function plots
+assignment6,A6P1_eda_data_cleaning.ipynb,3.2.5 Periodograms
+assignment6,A6P1_eda_data_cleaning.ipynb,"4.1 Handling missing data (forward fill, backward fill, moving average)"
+assignment6,A6P1_eda_data_cleaning.ipynb,4.2 Downsampling and upsampling
+assignment6,A6P1_eda_data_cleaning.ipynb,5. Data pipeline
+assignment6,A6P2_time_series_forecasting.ipynb,2.1 Data ingestion
+assignment6,A6P2_time_series_forecasting.ipynb,2.2 Time series data splits
+assignment6,A6P2_time_series_forecasting.ipynb,3.1 Lagged features
+assignment6,A6P2_time_series_forecasting.ipynb,4.1 Model training
+assignment6,A6P2_time_series_forecasting.ipynb,4.2 Evaluation
+assignment6,A6P2_time_series_forecasting.ipynb,4.3 Forecast horizons and model performance
+assignment6,A6P2_time_series_forecasting.ipynb,4.4 Statistical forecast models vs. machine learning
+assignment6,A6P3_time_series_nn.ipynb,2. Recurrent Neural Networks
+assignment6,A6P3_time_series_nn.ipynb,2.1 Data preparation
+assignment6,A6P3_time_series_nn.ipynb,2.2 Window generator
+assignment6,A6P3_time_series_nn.ipynb,2.3 Model training
+assignment6,A6P3_time_series_nn.ipynb,2.4 Multi-step forecast
+assignment6,A6P3_time_series_nn.ipynb,3.1 Fitting a CNN model with 1D convolutions
+assignment6,A6P3_time_series_nn.ipynb,3.2 Fitting a CNN model with 2D convolutions
+assignment6,A6P3_time_series_nn.ipynb,4. Libraries for time series analysis
+assignment7,A7P1_nlp_introduction.ipynb,2.1. Load the movie reviews dataset.
+assignment7,A7P1_nlp_introduction.ipynb,3.1. Perform basic EDA on dataset.
+assignment7,A7P1_nlp_introduction.ipynb,3.2. Use Regex to clean the movie review text.
+assignment7,A7P1_nlp_introduction.ipynb,4.1. Perform stemming on the text dataset.
+assignment7,A7P1_nlp_introduction.ipynb,4.2. Perform lemmatisation on the text dataset.
+assignment7,A7P1_nlp_introduction.ipynb,4.3. What are the advantages and disadvantages of stemming and lemmatisation?
+assignment7,A7P1_nlp_introduction.ipynb,4.4. Are stemming and lemmatising always beneficial? Identify situations in which they can be disadvantages.
+assignment7,A7P1_nlp_introduction.ipynb,5.1. Perform a train-test split on your corpus. Convert the train set into a count Bag of Words below. You may use any package that you find useful for this task.
+assignment7,A7P1_nlp_introduction.ipynb,5.2. Generate the Bag of Words vector for a single document. Print the counts along with their corresponding words. Which words have the highest counts? Highlight any other issues that you observe.
+assignment7,A7P1_nlp_introduction.ipynb,5.3. What are the advantages and disadvantages of using Bag of Words?
+assignment7,A7P1_nlp_introduction.ipynb,5.4. What are some of the improvements that can be made with Bag of Words?
+assignment7,A7P1_nlp_introduction.ipynb,5.5. Normalise your Bag of Words representation with TF-IDF. You may use any package that you find useful for this task.
+assignment7,A7P1_nlp_introduction.ipynb,5.6. Repeat 5.2. for the same document but with the TF-IDF vector below. How is this different from a simple Bag of Words? Compare this to the output from 5.2.
+assignment7,A7P1_nlp_introduction.ipynb,5.7. Implement your own Tokeniser function.
+assignment7,A7P1_nlp_introduction.ipynb,6.1. Build a classification model of your choice using Bag of Words as inputs to the classifier.
+assignment7,A7P1_nlp_introduction.ipynb,7.1. Briefly describe what an embedding is.
+assignment7,A7P1_nlp_introduction.ipynb,7.2. Briefly describe the Word2Vec algorithm. How are the trained word embeddings extracted? What are some of the advantages and disadvantages of Word2Vec?
+assignment7,A7P1_nlp_introduction.ipynb,7.3. What are the differences between the skip-gram and continuous Bag of Words (CBOW) algorithms for training Word2Vec?
+assignment7,A7P1_nlp_introduction.ipynb,7.4. What are the differences between context-free and contextual embeddings? Identify a few examples (algorithms) of each type.
+assignment7,A7P1_nlp_introduction.ipynb,8.1 Saving and loading of model
+assignment7,A7P1_nlp_introduction.ipynb,8.2 Create your SHAP explainer using your model and vectorizer.
+assignment7,A7P1_nlp_introduction.ipynb,8.3 SHAP over the dataset
+assignment7,A7P1_nlp_introduction.ipynb,8.4 Advantages and disadvantages of SHAP
+assignment7,A7P2_nlp_attention.ipynb,2.1. What are the 3 different alignment scoring functions for Luong's Attention? Outline the equations needed to compute the context vector for the decoder at the same time step using Luong's Global Attention model.
+assignment7,A7P2_nlp_attention.ipynb,"2.2. Given a Seq2Seq model which uses the global Luong's Attention and the dot product alignment scoring function, compute the Context Vector, $c_{1}$, for the Decoder at time step 1. Fill in your solution in the context_vector.py file in the src folder."
+assignment7,A7P3_nlp_transformer.ipynb,"2.1 In general, what is an Encoder?"
+assignment7,A7P3_nlp_transformer.ipynb,2.2 What is an Encoder-only transformer?
+assignment7,A7P3_nlp_transformer.ipynb,"2.3 Named some of the Encoder-only transformer models. Also, state their similarities and differences among the named models."
+assignment7,A7P3_nlp_transformer.ipynb,2.4 Transformer models are usually divided into a task-independent body and a task-specific head. What is a task-independent body and a task-specific head?
+assignment7,A7P3_nlp_transformer.ipynb,"2.5 Using appropriate task-independent body and task-specific head, build and train an Emotion Detector that classifies English Twitter messages into the following six basic emotions (anger, disgust, fear, joy, sadness, and surprise) using the Hugging Face Framework."
+assignment7,A7P3_nlp_transformer.ipynb,"2.6 Modify the architecture of the Emotion Detector model from Section 2.5 to classify the same English Twitter messages into the following generic emotions: Positive (joy and surprise) and Negative (anger, disgust, fear and sadness)"
+assignment7,A7P3_nlp_transformer.ipynb,"2.7 Besides Emotion Detection, what are the other applications of an Encoder-only transformer model?"
+assignment7,A7P3_nlp_transformer.ipynb,"3.1 In general, what is an Decoder?"
+assignment7,A7P3_nlp_transformer.ipynb,3.2 What is an Decoder-only transformer?
+assignment7,A7P3_nlp_transformer.ipynb,"3.3 Named some of the Decoder-only transformer models. Also, state their similarities and differences among the named models."
+assignment7,A7P3_nlp_transformer.ipynb,"3.4 An application of Decoder-only transformer models is Text Generation. Using the Hugging Face's pre-trained Decoder-only transformer models, implement a text generation model. Try experimenting with different:"
+assignment7,A7P3_nlp_transformer.ipynb,3.5 What are the metrics we can use to evaluate the quality of the Text Generation models? How do they provide a quantitatively assess outputs from the model?
+assignment7,A7P3_nlp_transformer.ipynb,"3.6 Besides Text Generation, what are the other applications of a Decoder-only transformer model?"
+assignment7,A7P3_nlp_transformer.ipynb,4.1 What is an Encoder-Decoder transformer?
+assignment7,A7P3_nlp_transformer.ipynb,4.2 Implement a Text Summarization model
+assignment7,A7P3_nlp_transformer.ipynb,4.3 How can we measure the quality of the generated text?
+assignment7,A7P3_nlp_transformer.ipynb,4.4 What are the other applications of an Encoder-Decoder transformer model?
+assignment7,A7P3_nlp_transformer.ipynb,5.Sentiment analysis using Transformer
+assignment8,A8P1_llm_introduction.ipynb,"2.1 In general, what is a Large Language Model? What qualify as a Large Language Model?"
+assignment8,A8P1_llm_introduction.ipynb,2.2 What is Emergent Abilities of Large Language Models?
+assignment8,A8P1_llm_introduction.ipynb,2.3 List down and describe the emergent abilities observed in Large Language Models.
+assignment8,A8P1_llm_introduction.ipynb,"3.1 What is a (1) base-model, (2) supervised fine-tuned and (3) instruction tuned Large Language Model? Provide a model example outside of GPT family for each category."
+assignment8,A8P1_llm_introduction.ipynb,3.2 GPT is a Autoregressive Language Model / Causal Language Model. What is a Autoregressive Language Model / Causal Language Model?
+assignment8,A8P1_llm_introduction.ipynb,"3.2 As a Autoregressive Language Model / Causal Language Model, how is GPT capable of performing a wide range of different tasks, including text generation, translation and question-answering?"
+assignment8,A8P1_llm_introduction.ipynb,"3.3 With reference to the following article, identify the sources that contributed to the emergent abilities observed in GPT models."
+assignment8,A8P1_llm_introduction.ipynb,3.4 What is Reinforcement Learning with Human Feedback (RLHF)? Why is RLHF needed in ChatGPT?
+assignment8,A8P2o_prompt_engineering.ipynb,"3.1 In the context of Large Language Model, what is zero-shot learning?"
+assignment8,A8P2o_prompt_engineering.ipynb,"3.2 Using the LangChain framework and GPT Large Language model, generate a movie review text for the Demon Slayer anime movie. Adjust the temperature, max_output_tokens, top_p and top_k of the model. How did the LLM output change? Explain the above four hyperparameter."
+assignment8,A8P2o_prompt_engineering.ipynb,"3.3 We can also use Large Language Model to perform zero-shot text classification. Using the LangChain framework, classify the following medical cases into one of the following two categories: urgent and non-urgent. Verify the model output with the correct answer indicated within the bracket"
+assignment8,A8P2o_prompt_engineering.ipynb,3.4 Demonstrate a personal example of how you can apply zero-shot prompting.
+assignment8,A8P2o_prompt_engineering.ipynb,"4.1 In the context of Large Language Model, what is few-shot prompting?"
+assignment8,A8P2o_prompt_engineering.ipynb,"4.2 Based on the above results, PAIA and COVID should be wrongly classified using zero-shot learning. Using the Few-shot prompt templates in the LangChain framework, perform text classification on the following medical cases:"
+assignment8,A8P2o_prompt_engineering.ipynb,"4.3 In your opinion, what could be the advantages and disadvantages of using few-shot prompting?"
+assignment8,A8P2o_prompt_engineering.ipynb,"5.1 In the context of Large Language Model, what is Chain of Thought?"
+assignment8,A8P2o_prompt_engineering.ipynb,"5.2 Using the LangChain framework, using without and with zero-shot Chain of Thought, classify the following medical case into one of the following two categories: urgent and non-urgent."
+assignment8,A8P2o_prompt_engineering.ipynb,"5.3 Besides Chain-of-Thoughts, these are other approaches to elicit the reasoning capability of LLMs, including Self Consistency with Chain of Thought, Tree of Thoughts and Recursion of Thoughts. Do spend some time to read the above two listed papers!"
+assignment8,A8P3_qa_documents.ipynb,2.1 Briefly describe ReAct.
+assignment8,A8P3_qa_documents.ipynb,"3.1 In the data folder, you are given the technical assessment question for Batch 13 and 14, as well as two csv files containing the results for AIAP Batch 13 and 14. In the CSV files, there are three columns: name of the candidate (1st column), name of the assessor (2nd column) and the result of the candidate (3rd column). Build a ""Question Answering over Documents Platform"" together with other tools if necessary to answer the following questions using the platform you designed. You are allowed to make any necessary changes, including the data files, to complete the questions:"

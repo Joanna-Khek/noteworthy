@@ -1,0 +1,8 @@
+start_assignment: 1
+end_assignment: 1
+temperature: 0
+max_tokens: 518
+top_p: 0.8
+batch_size: 10  # Define the batch size
+delay: 5  # Define the delay between batches in seconds
+log_level: INFO
