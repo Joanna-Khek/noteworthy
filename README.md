@@ -1,5 +1,7 @@
 # NoteWorthy
 
+This product was created during the 2 days mini project deep skilling phase at AIAP.
+
 ## Project Motivation
 In the journey of learning and development at AIAP, individual feedback is crucial, yet often scarce and intimidating to seek. What if you could gain valuable insights by learning from the work of your peers, without the inefficiencies of manual notebooks review?
 
